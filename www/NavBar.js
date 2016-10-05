@@ -83,6 +83,10 @@ module.exports = {
         this.leftButtonCallback()
     },
 
+    setLeftButtonEnabled: function(enabled) {
+        exec(null, null, "NavBar", "setLeftButtonEnabled", [enabled]);
+    },
+
     setupRightButton: function(title, image, thefunction) {
         this.rightButtonCallback = thefunction;
         exec(null, null, "NavBar", "setupRightButton", [title, image, thefunction]);
@@ -91,6 +95,10 @@ module.exports = {
     rightButtonTapped: function() {
     	if(typeof(this.rightButtonCallback) === "function")
 		this.rightButtonCallback()
+    },
+
+    setRightButtonEnabled: function(enabled) {
+        exec(null, null, "NavBar", "setRightButtonEnabled", [enabled]);
     },
 
     setupDrawer: function(listitems, buttoncolor) {
