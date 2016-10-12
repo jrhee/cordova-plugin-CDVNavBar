@@ -33,5 +33,6 @@
         <header-file src="src/ios/CDVNavigationBarController.h" />
         <source-file src="src/ios/CDVNavigationBarController.m" />
         <source-file src="src/ios/CDVNavigationBar.xib" />
+        <source-file src="back.png"/>
     </platform>
 </plugin>
