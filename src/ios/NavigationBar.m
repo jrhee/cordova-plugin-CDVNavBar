@@ -196,18 +196,19 @@
     navBarController = [[CDVNavigationBarController alloc] init];
     navBar = (UINavigationBar*)[navBarController view];
     
-    navBar.barStyle = UIBarStyleBlackTranslucent;
-    [navBar setTintColor:[UIColor whiteColor]];
-    [navBar setBackgroundColor:[UIColor colorWithRed:218.0/255.0 green:33.0/255.0 blue:39.0/255.0 alpha:1.0]];
+    navBar.barStyle = UIBarStyleBlack;
+    [navBar setBarTintColor:[UIColor colorWithRed:10.0/255.0 green:235.0/255.0 blue:185.0/255.0 alpha:1.0]];
+    //    [navBar setTintColor:[UIColor whiteColor]];
+    //    [navBar setBackgroundColor:[UIColor colorWithRed:218.0/255.0 green:33.0/255.0 blue:39.0/255.0 alpha:1.0]];
     //[navBar setBackgroundImage:[UIImage imageNamed:@"bg_new.png"] forBarMetrics:UIBarMetricsDefault];
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor colorWithRed:131.0/255.0 green:23.0/255.0 blue:78.0/255.0 alpha:1.0];
     shadow.shadowOffset = CGSizeMake(0, 2);
     shadow.shadowBlurRadius = 5;
-    [navBar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
-                                     [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
-                                     //shadow, NSShadowAttributeName,
-                                     [UIFont fontWithName:@"Helvetica" size:18.0], NSFontAttributeName, nil]];
+    //    [navBar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+    //                                     [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
+    //                                     //shadow, NSShadowAttributeName,
+    //                                     [UIFont fontWithName:@"Helvetica" size:18.0], NSFontAttributeName, nil]];
     
     
     [navBarController setDelegate:self];
