@@ -46,14 +46,14 @@
         case UIInterfaceOrientationLandscapeLeft:
         case UIInterfaceOrientationLandscapeRight:
         {
-            float statusBarHeight = 0;
-            if(!app.statusBarHidden)
-                statusBarHeight = MIN(app.statusBarFrame.size.width, app.statusBarFrame.size.height);
-            
-            originalWebViewFrame = CGRectMake(originalWebViewFrame.origin.y,
-                                              originalWebViewFrame.origin.x,
-                                              originalWebViewFrame.size.height + statusBarHeight,
-                                              originalWebViewFrame.size.width - statusBarHeight);
+//            float statusBarHeight = 0;
+//            if(!app.statusBarHidden)
+//                statusBarHeight = MIN(app.statusBarFrame.size.width, app.statusBarFrame.size.height);
+//            
+//            originalWebViewFrame = CGRectMake(originalWebViewFrame.origin.y,
+//                                              originalWebViewFrame.origin.x,
+//                                              originalWebViewFrame.size.height + statusBarHeight,
+//                                              originalWebViewFrame.size.width - statusBarHeight);
             break;
         }
         default:
@@ -214,7 +214,7 @@
     [navBarController setDelegate:self];
     [[navBarController navItem] setLeftBarButtonItem:nil animated:NO];
     [[navBarController navItem] setRightBarButtonItem:nil animated:NO];
-    [[navBarController view] setFrame:CGRectMake(0, 0, originalWebViewFrame.size.width, navBarHeight)];
+//    [[navBarController view] setFrame:CGRectMake(0, 0, originalWebViewFrame.size.width, navBarHeight)];
     [[[self webView] superview] addSubview:[navBarController view]];
     [navBar setHidden:YES];
     
