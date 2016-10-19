@@ -24,13 +24,13 @@
                 <color key="textColor" red="0.021044438704848289" green="0.27654862403869629" blue="0.24527519941329956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             </textAttributes>
             <items>
-                <navigationItem title="Title" id="35">
-                    <barButtonItem key="leftBarButtonItem" title="Item" id="36">
+                <navigationItem id="35">
+                    <barButtonItem key="leftBarButtonItem" id="36">
                         <connections>
                             <action selector="leftButtonTapped:" destination="-1" id="43"/>
                         </connections>
                     </barButtonItem>
-                    <barButtonItem key="rightBarButtonItem" title="Item" id="37">
+                    <barButtonItem key="rightBarButtonItem" id="37">
                         <connections>
                             <action selector="rightButtonTapped:" destination="-1" id="44"/>
                         </connections>
