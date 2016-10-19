@@ -65,7 +65,8 @@
     navBarHeight = 64.0f;
     tabBarHeight = 49.0f;
     // -----------------------------------------------------------------------
-    
+    [self create:nil];
+    [self show:nil];
 }
 
 

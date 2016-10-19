@@ -21,6 +21,7 @@
         <config-file target="config.xml" parent="/*">
             <feature name="NavBar">
                 <param name="ios-package" value="NavigationBar"/>
+                <param name="onload" value="true" />
             </feature>
         </config-file>
 
